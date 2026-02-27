@@ -1,0 +1,33 @@
+.doctor-dashboard {
+  padding: 40px;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.patients-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.patient-card {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s;
+}
+
+.patient-card.alert {
+  background-color: #ff4d4d;
+}
+
+.patient-card.stable {
+  background-color: #4CAF50;
+}
+
+.patient-card:hover {
+  transform: scale(1.05);
+}
